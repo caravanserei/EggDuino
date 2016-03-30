@@ -10,7 +10,8 @@ You will find several modifications on software and Python scripts and some sugg
 The EggBot inventors of EVIL-MAD-SCIENTISTS for giving the idea and the basic tool-chain: http://wiki.evilmadscientist.com/Installing_software
 
 The mechanics concept of a print-at-home-bot by GLASSWALKER: http://www.thingiverse.com/thing:20398
-Not to forget the verey useful improvements suggested by NGLASSON: http://www.thingiverse.com/thing:263668
+
+Not to forget the very useful improvements suggested by NGLASSON: http://www.thingiverse.com/thing:263668
 
 The software concept of EggDuino-on-Arduino by COCKTAILYOGI: https://github.com/cocktailyogi/EggDuino and http://www.thingiverse.com/thing:302148
 
