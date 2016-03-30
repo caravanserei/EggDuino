@@ -10,10 +10,11 @@ You will find several modifications on software and Python scripts and some sugg
 The EggBot inventors of EVIL-MAD-SCIENTISTS for giving the idea and the basic tool-chain: http://wiki.evilmadscientist.com/Installing_software
 
 The mechanics concept of a print-at-home-bot by GLASSWALKER: http://www.thingiverse.com/thing:20398
+Not to forget the verey useful improvements suggested by NGLASSON: http://www.thingiverse.com/thing:263668
 
 The software concept of EggDuino-on-Arduino by COCKTAILYOGI: https://github.com/cocktailyogi/EggDuino and http://www.thingiverse.com/thing:302148
 
-And lots of contributors like BARTIBOR or FINDUS4FUN for their improvements.
+And lots of contributors like BARTEBOR or FINDUS4FUN for their software improvements.
 
 Well, and here are those of mine:
 
@@ -28,22 +29,22 @@ Picture by Arnd Schaffert
 	- Lean solution for power supply from one source. Needs just one single wire to be soldered on PCB.
 	- Easy access to A4988-1/16-step-drivers. 
 	- X- and Z-channel are choosen intentionally as Egg- and Pen-motor-channels to free the two PWM-ports normally assigned as DIR and STEP of the Y-channel as PWM-output for servo and engraver.
-	- Adaptor board for easy attachment of servo and engraver.
-	- Optional wiring to read the main supply voltage.
+	- Adaptor board for easy attachment of servo and engraver. Circuit and layout available as PDF.
+	- Optional wiring to read back the main supply voltage.
 	- Engraver control unit with a tiny PCB. Circuit and layout available as PDF.
 - Software:
 	- New assignements of I/O-ports to fit the GRBL-CNC-shield including user keys, servo- and engraver-PWM.
 	- 0-100% PWM-control of the engraver as on EiBotBoard.
-	- Check of main supply voltage (almost) as on EiBotBoard. This is a quick check only and no precise measurement.
+	- Emulation of EiBotBoard port-commands to control the engraver.
+	- Added optional read back of main supply voltage by activation of QC-command (almost) as on EiBotBoard. Needs the appropriate hardware modification. This is a quick check only and no precise measurement.
 	- New option to invert servo motion (0°->180° vs 180°->0°) for more flexibility with servo mounting position. Stored in EEPROM.
-	- Added optional check of main supply voltage by activation of QC-command. Needs the appropriate hardware modification.
 	- Activated servo up/down speed option ("slow down" is most important!) with a simple delay algorithm based on microseconds delay. Stored in EEPROM.
 - 3D printable parts:
-	- Two versions of a direct mount of ARDUINO UNO with GRBL-shield to frame.
+	- Two versions of a direct mount of ARDUINO UNO with GRBL-shield to frame. One stand-alone and one to add to an existing build. Hint: The Arduino mounting holes seem to be a little bit crooked, but that's the original Arduino footprint taken from the DXF and it fits perfectly.
 	- Clip-on protection cover for the electronics (see main picture above).
 	- Modified bearing holders to fit 6x19mm bearings (instead of 8x23mm) and 6mm threaded rods (instead of 8mm).
-	- Egg-coupler for round (non-flatted) 5mm stepper axle. Intended to be used with a simple rubber ring as egg-coupler.
-	- Modified pen-arm to fit a 9g-servo with 20mm body length and 23mm hole spacing.
+	- Egg-coupler for round (non-flatted) 5mm stepper axle. Intended to be used with a simple rubber ring (2,5mm circular profil; water hose gaskets in real life) as egg-coupler.
+	- Modified pen-arm to fit a tiny 9g-servo with 20mm body length and 23mm hole spacing.
 	- Modified spring to fit the servo. I did not get along well with the fixture of the servo arm to the spring, so my spring is just a springy buffer.
 - Scripts of the Inkscape extension:
 	- Integration of servo inversion option into user interface. Check eggbot.py and eggbot.inx for details.
