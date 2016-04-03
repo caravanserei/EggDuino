@@ -57,6 +57,7 @@ Picture by Arnd Schaffert
 	- Tested on Win7/64-Pro and Win7/32-Home only up to now
 	- Arduino IDE 1.6.7 and IDE 1.6.8
 	- Inkscape 0.91
+	- Inkscape Extension Packet 2.7.1 (https://github.com/evil-mad/EggBot/releases/download/2.7.1/eggbot2.7.1_win.zip)
 	- Python 2.7.2
 	- Arduino Uno R3 with Atmel 16u2 USB-device (USB-auto-reset currently NOT deactivated; doesn't bother me too much up to now)
 	- Arduino Uno R3 with WCH CH340G USB-device
